@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500;700&family=Montserrat&display=swap');
+
+/* 
+COLORES:
+
+#E1CE7A
+#FBFFB9
+#FDD692
+#EC7357
+#754F44
+
+
+
+#363020
+#605C4E
+#A49966
+#C7C7A6
+#EAFFDA
+
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+  margin-left: 5rem;
+  border: black 1px;
+  border-radius: 5px;
+  padding: 3px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h2 {
+  padding: 50px;
+  text-align: center;
+  text-decoration: underline black;
+}
+
+h4 {
+  margin-left: 30px;
+  text-decoration: underline;
+}
+
+h5 {
+  padding-left: 50%;
+  padding-top: 20px;
+  text-decoration: underline;
+}
+
+img {
+  width: 450px;
+  height: 300px;
+}
+
+// FOOTER
+
+footer {
+    display: flex;
+    text-align: center;
+    background-color: #A49966;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    div{
+        ul{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+        }
+    }
+}
+
+.s_icons{
+    height: 30px;
+    width: 30px;
+}
+
+// MAIN
+main{
+    background-color: #FBFFB9;
+}
+
+
+// EDITO LA ETIQUETA BODY PARA QUE NO QUEDEN ESPACIOS EN BLANCO 
+body{
+    background-color: #FBFFB9;
+}
+
+
+
+.redes {
+  padding-top: 100px;
+  text-align: center;
+  text-decoration: underline black;
+}
+
+.social {
+  padding-top: 45px;
+}
+
+.nav-deco {
+  padding: 0px;
+}
+
+.nav-color{
+    background-color: #A49966;
+}
+
+.busc-prod {
+    background-color: #d4ce76;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+button{
+    background-color: #d4ce76;
+}
+
+
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* CARDS PRODUCTOS */
+
+.card {
+  margin: 15px;
+  border-color: #754F44;
+}
+
+.card-body, .card-text, .card-title {
+  background-color: #FBFFB9;
+}
+
+.btn-primary {
+  background-color: #754F44;
+  border-color: #754F44;
+
+  &:hover {
+    background-color: #A49966;
+    border-color: #A49966;
+  }
+}
+
+
+
+.nosotros_team {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.img_team {
+  width: 350px;
+  height: 350px;
+  padding-left: 30px;
+  padding-top: 50px;
+  border-radius: 5px;
+  margin-top: 20px;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+    transition: .3s;
+  }
+}
+
+.txt-nos {
+  padding-top: 25px;
+  padding-left: 50px;
+  box-sizing: 0px;
+}
+
+.text-under {
+  padding-left: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Dante Vittorio Pedro" "Nacho Thomy Arguin";
+}
+
+.Dante {
+  grid-area: Dante;
+}
+
+.Vittorio {
+  grid-area: Vittorio;
+}
+
+.Pedro {
+  grid-area: Pedro;
+}
+
+.Nacho {
+  grid-area: Nacho;
+}
+
+.Thomy {
+  grid-area: Thomy;
+}
+
+.Arguin {
+  grid-area: Arguin;
+}
+
+/* Sucursales */
+
+.sucursales {
+  display: flex;
+  flex-direction: column;
+}
+
+.suc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mapita {
+  margin-left: 30px;
+}
+
+.nomsuc {
+  text-decoration: underline black 1px;
+}
+
+/* Carrusel (talles) */
+
+.carrusel {
+  font-size: smaller;
+  width: 50%;
+  margin-left: 500px;
+  text-align: center;
+}
+
+.talles {
+  width: 800px;
+  margin-left: 30px;
+}
+
+/* Decorando formulario (Contacto) */
+
+.estiloContactos {
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 50px;
+  padding: 30px;
+  text-align: center;
+  border: black 1px solid;
+  border-radius: 10px;
+}
+
+input, textarea {
+  border-radius: 5px;
+  background-color: #d4ce76;
+}
+
+.bot-env {
+  padding: 5px 5px 5px 5px;
+}
+
+/* MEDIA QUERYS */
+
+@media (max-width: 1710px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 9rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "Dante  Vittorio" "Pedro Nacho" "Thomy Arguin";
+  }
+
+  .txt-nos {
+    padding-top: 25px;
+    box-sizing: 0px;
+  }
+
+  .carrusel {
+    text-align: center;
+    margin-left: 400px;
+    width: 55%;
+  }
+}
+
+
+@media (max-width: 1247px) {
+  .nosotros_team {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+
+  .carrusel {
+    text-align: center;
+    margin-left: 250px;
+  }
+}
+
+
+@media (max-width: 1127px) {
+  .estiloContactos {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    text-align: center;
+    border: black 1px solid;
+    border-radius: 8px;
+  }
+
+  textarea {
+    font-size: small;
+  }
+}
+
+
+@media (max-width: 867px) {
+  .carrusel {
+    text-align: center;
+    margin-left: 50px;
+    width: 80%;
+  }
+
+  .sucursales {
+    font-size: xx-small;
+  }
+}
+
+@media(max-width:768px){
+  footer{
+    width: 100%;
+  }
+  .img_team {
+    width: 275px;
+    height: 275px;
+    padding-left: 50px;
+  }
+}
+
+@media(max-width:645px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 634px) {
+  .sucursales{
+    align-items: flex-start;
+    margin-left: 50px;
+    .suc {
+      height: 50%;
+      width: 50%;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .txt-nos {
+    font-size: 17px;
+  }
+
+  .img_team {
+    width: 250px;
+    height: 250px;
+    padding-left: 50px;
+  }
+}
+
+@media(max-width:516px){
+  .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex-wrap: wrap;
+  }
+}
+
+
+@media(max-width:453px){
+  .sucursales{
+    div{
+      margin-left: 50px;
+      iframe{
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 445px) {
+  .imagenes {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 414px) {
+  textarea {
+    font-size: x-small;
+  }
+}
